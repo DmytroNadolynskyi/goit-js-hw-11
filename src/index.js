@@ -26,7 +26,7 @@ const  callback = async (entries,observer) => {
       const imagesArr = searchResult.data.hits;         
       gallery.insertAdjacentHTML('beforeend', HBSGallery(imagesArr));
       simpleLightbox.refresh();
-      slowScroll();
+    //   slowScroll();
       if(Math.ceil(searchResult.data.totalHits / pixabayApi.per_page) < pixabayApi.page) {
         // loadMoreBtn.classList.add('is-hidden');
            observer.unobserve(scroll)
@@ -105,12 +105,12 @@ async function onSearchFormSubmit(event) {
 //     }
 // }
 
-function slowScroll () {
-  const { height: cardHeight } = document
-  .querySelector(".gallery")
-  .firstElementChild.getBoundingClientRect();
-  window.scrollBy({
-    top: cardHeight * 2,
-    behavior: "smooth",
-  });
-}
+// function slowScroll () {
+//   const { height: cardHeight } = document
+//   .querySelector(".gallery")
+//   .firstElementChild.getBoundingClientRect();
+//   window.scrollBy({
+//     top: cardHeight * 2,
+//     behavior: "smooth",
+//   });
+// }
