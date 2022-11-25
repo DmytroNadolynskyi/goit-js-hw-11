@@ -1,0 +1,90 @@
+body {
+    padding-bottom: 50px;
+    margin-top: 0;
+    background-color: lavender
+}
+
+form {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: lavender;
+    position: fixed;
+}
+
+input,
+button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+input {
+    width: 300px;
+}
+
+        input:focus {
+        outline: none;
+        box-shadow: inset 0px 0px 2px blue;
+    }
+
+
+button {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgba(121, 243, 243, 0.7);
+    cursor: pointer;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.load-more {
+    display: block;
+    margin: 0 auto;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.gallery {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 75px;
+}
+
+.photo-card {
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    border-top: none;
+    background-color: gold
+
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
