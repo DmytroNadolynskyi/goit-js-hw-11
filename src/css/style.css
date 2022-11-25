@@ -27,10 +27,10 @@ input {
     width: 300px;
 }
 
-        input:focus {
-        outline: none;
-        box-shadow: inset 0px 0px 2px blue;
-    }
+input:focus {
+ outline: none;
+ box-shadow: inset 0px 0px 2px blue;
+}
 
 
 button {
@@ -39,6 +39,9 @@ button {
     background-color: rgba(121, 243, 243, 0.7);
     cursor: pointer;
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    background-color: aqua;
 }
 
 .load-more {
@@ -63,8 +66,8 @@ button {
 .photo-card {
     width: 350px;
     overflow: hidden;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
 }
 
 img {
