@@ -24,30 +24,27 @@ button {
 }
 
 input {
-    width: 300px;
+    padding-left: 20px;
+    width: 450px;
 }
 
 input:focus {
- outline: none;
+ outline:red;
  box-shadow: inset 0px 0px 2px blue;
+ border-color: red;
 }
 
 
 button {
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color: rgba(121, 243, 243, 0.7);
-    cursor: pointer;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: aquamarine;
+    
 }
 button:hover{
     background-color: aqua;
 }
 
-.load-more {
-    display: block;
-    margin: 0 auto;
-}
 
 .is-hidden {
     display: none;
@@ -62,7 +59,19 @@ button:hover{
     padding-bottom: 50px;
     padding-top: 75px;
 }
+.info {
+    display: flex;
+    justify-content: space-around;
+    border-top: none;
+    background-color: gold
+}
 
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
 .photo-card {
     width: 350px;
     overflow: hidden;
@@ -77,17 +86,3 @@ img {
     object-fit: cover;
 }
 
-.info {
-    display: flex;
-    justify-content: space-around;
-    border-top: none;
-    background-color: gold
-
-}
-
-.info-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}

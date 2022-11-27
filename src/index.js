@@ -1,19 +1,19 @@
+import {Notify } from 'notiflix';
 import { PixabayApi } from "./fetchImages";
 import HBSGallery from "./gallery.hbs";
-import {Notify } from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
-const loadMoreBtn = document.querySelector('.load-more');
+const searchForm = document.querySelector('#search-form');
 const searchBtn = document.querySelector('.submit-btn');
 const input = document.querySelector('input')
 const scroll = document.querySelector('.js-target-scroll')
+const loadMoreBtn = document.querySelector('.load-more');
 
 
 const simpleLightbox = new SimpleLightbox('.photo-card a', {
-  captionDelay: 250,
+  captionDelay: 300,
 });
 
 
