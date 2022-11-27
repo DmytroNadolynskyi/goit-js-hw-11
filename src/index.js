@@ -59,7 +59,7 @@ async function onSearchFormSubmit(event) {
   pixabayApi.searchQuery = event.target.elements.searchQuery.value.trim();
 
   if(!pixabayApi.searchQuery) {
-    Notify.failure('Enter the keyword, please');
+    Notify.failure('The field is empty...');
     return;
   }
 
@@ -69,7 +69,7 @@ async function onSearchFormSubmit(event) {
     
     if (imagesArr.length === 0) {
       Notify.failure('Sorry, there are no images matching your search query. Please try again.')
-      throw new Error("Limit error");
+      throw new Error("error");
     }
 
     gallery.innerHTML = HBSGallery(imagesArr);
