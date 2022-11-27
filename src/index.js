@@ -20,7 +20,6 @@ const simpleLightbox = new SimpleLightbox('.photo-card a', {
 const  callback = async (entries,observer) => {
     if (entries[0].isIntersecting) {
         pixabayApi.page += 1;
-        pixabayApi.per_page = '12';
     try {
       const searchResult = await pixabayApi.fetchImages()
       const imagesArr = searchResult.data.hits;         
